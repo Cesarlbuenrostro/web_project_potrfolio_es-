@@ -6,7 +6,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  background: #0d0d0d;
+  background: linear-gradient(180deg, #111827, #1e1b4b);
   color: white;
 }
 
@@ -93,7 +93,7 @@ body {
 main {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 40px 40px;
+  padding: 40px;
 }
 .skills {
   font-weight: bold;
@@ -124,12 +124,16 @@ main {
 
 .project-card {
   background: #1a1a1a;
-
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
 }
 .card-content {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .image-container {
   position: relative;
@@ -148,6 +152,20 @@ main {
   left: 10px;
   display: flex;
   gap: 6px;
+}
+.project-links {
+  display: flex;
+  gap: 16px;
+  margin-top: auto;
+}
+
+.project-link-image {
+  height: 22px;
+  width: 132px;
+}
+
+.project-links a:hover {
+  opacity: 0.7;
 }
 
 footer {
@@ -260,5 +278,9 @@ footer {
   .skill-icon {
     width: 36px;
     height: 36px;
+  }
+  .header-image img {
+    width: 140px;
+    height: auto;
   }
 }
